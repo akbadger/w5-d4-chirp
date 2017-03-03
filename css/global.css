@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+/*img {
+    width: 100%;
+}*/
+body {
+    background-image: url(img/cream_pixels.png);
+}
+
+.logo {
+    max-width: 80px;
+    margin-bottom: 10px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.dashlogo {
+    max-width: 50px;
+}
+
+#go-back {
+   padding: 5px;
+    text-decoration: none;
+    float: right;
+    font-size: 20px; 
+}
+
+
+#settings {
+    padding: 5px;
+    text-decoration: none;
+    float: right;
+    font-size: 20px;
+}
+
+#logout {
+    padding: 5px;
+    text-decoration: none;
+    float: right;
+    font-size: 20px;
+}
+
+.user-avatar img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 80px;
+    border-radius: 50%;
+}
+
+.avatar {
+    display: inline;
+    border-radius: 50%;
+    max-width: 60px;
+    margin-right: 20px;
+}
+
+.follow {
+    margin-left: 40px;
+}
+
+.avatar-label {
+    font-weight: normal;
+}
+
+.btn {
+    background: #7fdcbf;
+    border: none;
+    color: white;
+}
+
+.btn:hover {
+    background: #6bb9a2;
+    color: white;
+}
+
+.panel-footer a {
+    text-decoration: none;
+}
+
+.glyphicon-chevron-right {
+    color: #417db4;
+}
+
+.btn-follow {
+    margin-left: 10px;
+}
+
+h3 {
+    padding-bottom: 15px;
+}
