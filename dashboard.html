@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title></title>
+    <title>Chirp Home</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="text/javascript" src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,fetch,Array.prototype.includes"></script>
@@ -28,25 +28,28 @@
                         <img src="img/chirp-logo.png" alt="chirp logo" class="dashlogo text-center" />
                     </div>
                     <div class="panel panel-body">
-                        <span class="user-avatar">
+                        <span class="user-avatar profile">
                             <img src="https://unsplash.it/400?random" alt="user avatar"/>
                            <h6 class="text-center">Username</h6>
                         </span>
                         <span class="input-group">
-                            <input type="text" class="form-control" placeholder="chirps go here...">
+                            <input type="text" class="form-control" id="chirpInput" placeholder="chirps go here...">
                             <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">Chirp!</button>
+                                <button class="btn btn-default" type="button" id="chirpButton">Chirp!</button>
                             </span>
                         </span>
                         <br/>
                         <div class="well">
-                            <ul class="list-group" id="chirps">
-                                <img src="https://unsplash.it/400?random" alt="profile photo" class="avatar" />
-                                <span class="message"> chirp chirp chirp</span> <span class="text-muted text-small"> 4:45pm 01/03/2017</span>
-                                <h6>Username</h6>
+                            <ul class="list-group" id="chirp">
+                                <li>
+                                    <img src="https://unsplash.it/400?random" alt="profile photo" class="avatar" />
+                                    <span class="message"> chirp chirp chirp</span> <span class="text-muted text-small"> 4:45pm 01/03/2017</span>
+                                    <h6>Username</h6>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="well">
+                    <!--<div class="well">
                         <div class="chirps">
                             <img src="https://unsplash.it/400?random" alt="profile photo" class="avatar" />
                             <span class="message"> chirp chirp chirp</span> <span class="text-muted text-small"> 4:45pm 01/03/2017</span>
@@ -66,14 +69,17 @@
                             <span class="message"> chirp chirp chirp</span> <span class="text-muted text-small"> 4:45pm 01/03/2017</span>
                             <h6>Username</h6>
                         </div>
-                    </div>
-                    </ul>
+                    </div>-->
+                    
                 </div>
             </div>
         </div>
     </div>
-    </div>
-
+</div>
+    <!--<script src="moment.js"></script>
+<script>
+    moment().format();
+</script>;-->
     <script src="js/dashboard.js"></script>
     <script src="js/global.js"></script>
 </body>

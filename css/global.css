@@ -5,7 +5,8 @@
     width: 100%;
 }*/
 body {
-    background-image: url(img/cream_pixels.png);
+    /*background: #ccffff;*/
+    background-image: url(../img/grey_wash_wall.png);
 }
 
 .logo {
@@ -24,7 +25,10 @@ body {
    padding: 5px;
     text-decoration: none;
     float: right;
-    font-size: 20px; 
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    
 }
 
 
@@ -33,6 +37,8 @@ body {
     text-decoration: none;
     float: right;
     font-size: 20px;
+    color: white;
+    cursor: pointer;
 }
 
 #logout {
@@ -40,6 +46,9 @@ body {
     text-decoration: none;
     float: right;
     font-size: 20px;
+    color: white;
+    cursor: pointer;
+    
 }
 
 .user-avatar img {
@@ -66,7 +75,7 @@ body {
 }
 
 .btn {
-    background: #7fdcbf;
+    background: #6ec7b1;
     border: none;
     color: white;
 }
@@ -74,6 +83,10 @@ body {
 .btn:hover {
     background: #6bb9a2;
     color: white;
+}
+
+.panel-heading {
+    background: #e9edf0;
 }
 
 .panel-footer a {
@@ -90,4 +103,8 @@ body {
 
 h3 {
     padding-bottom: 15px;
+}
+
+ul {
+    list-style: none;
 }

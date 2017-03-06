@@ -1,10 +1,11 @@
+
 document.querySelector('#loginButton').addEventListener('click', login);
 
 function login() {
     var username = document.querySelector('#username').value;
     var password = document.querySelector('#password').value;
 
-    fetch('NGROK URL HERE', {
+    fetch('https://stark-castle-75079.herokuapp.com/login', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -25,7 +26,7 @@ function login() {
 
             if (response.token) {
                 // Saves any string into a named spot within your browser for the current domain.
-                sessionStorage.setItem('token', response.token);
+                sessionStorage.setItem('user', JSON.stringify(response));
                 location.href = 'dashboard.html';
             }
             else {
