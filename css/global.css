@@ -5,8 +5,8 @@
     width: 100%;
 }*/
 body {
-    /*background: #ccffff;*/
-    background-image: url(../img/grey_wash_wall.png);
+    background: black;
+    /*background-image: url(../img/grey_wash_wall.png);*/
 }
 
 .logo {
@@ -75,13 +75,16 @@ body {
 }
 
 .btn {
-    background: #6ec7b1;
+    background: #800000;
     border: none;
     color: white;
 }
-
+a, 
+a:hover {
+    color: black;
+}
 .btn:hover {
-    background: #6bb9a2;
+    background: #800000;
     color: white;
 }
 

@@ -46,9 +46,12 @@ function createChirp(chirp) {
                             <span class="message">${chirp.body}</span> <span class="text-muted text-small">Wednesday, March 01 2017 12:04:43PM</span>
                             <h6>${chirp.user.username}</h6>
                         </li>`;
-    // <span class="message">${chirp.body}</span> <span class="text-muted text-small">${timeDisplay()}</span> 
 
     document.querySelector('#chirp').innerHTML = chirpListItem + document.querySelector('#chirp').innerHTML;
+    
+    // this code doesn't work.  How do I clear out text input field after sending chirp? //
+    document.querySelector('#chirpInput').innerHTML = '';
+    
 }
 
 function postChirp() {
@@ -69,15 +72,11 @@ function postChirp() {
             return response.json();
         })
         .then(function(response) {
-            console.log(response);
-            createChirp(response);
-            
+            createChirp(response);  
         })
 
         // This code doesn't work.  Trying to clear out the text input once the chirp has been posted. Stumped here...
-        .then(function(response) {
-            document.querySelector('#chirpInput').innerHTML = '';
-        })
+        
 }
 
 
