@@ -6,7 +6,7 @@
 }*/
 body {
     background: black;
-    /*background-image: url(../img/grey_wash_wall.png);*/
+    font-family: 'Hind', sans-serif;
 }
 
 .logo {
